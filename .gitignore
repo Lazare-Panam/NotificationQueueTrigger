@@ -262,3 +262,13 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Build/publish artifacts and deployment packages
+publish_out/
+deploy.zip
+*.zip
+Properties/PublishProfiles/
+
+# Compiled binaries (belt-and-suspenders; bin/obj already ignored above)
+*.dll
+*.pdb
