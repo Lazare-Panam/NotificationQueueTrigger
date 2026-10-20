@@ -38,7 +38,7 @@ namespace NotificationQueueTrigger
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message, ex);
+                _logger.LogError(ex, "Failed to send email to {Email} for message {MessageId}.", email, message.MessageId);
                 throw;
             }
         }
